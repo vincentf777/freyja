@@ -1,5 +1,7 @@
+import { getSongList } from '@/api/commands';
 import React, { useState, useEffect } from 'react';
 import Song from './song';
+
 
 const dummySongData = [
     {id: 1,
@@ -41,6 +43,12 @@ function SongList(){
     const [songs, setSongs] = useState(dummySongData)
 
     useEffect(() => {
+        const faunaTest = async () => {
+            const result = await getSongList()
+            console.log(result)
+        }
+
+        faunaTest()
     }, [])
 
     function getNewSongs(){

@@ -20,6 +20,23 @@ function Song({songObject}: Props){
             <span className='row-start-1 col-start-1 col-span-3'>
                 {songObject.title}
             </span>
+            <span className='row-start-1 col-start-4 col-span-2'>
+                ID: {songObject.id}
+            </span>
+            <span className='row-start-2 col-start-1 col-span-3'>
+                {songObject.nativeTitle}
+            </span>
+            <span className='row-start-3 col-start-1 col-span-3'>
+                {songObject.artist}
+            </span>
+
+            <span className='row-start-4 col-start-1 col-span-2'>
+                <a href={songObject.youtubeLink}>Youtube</a>
+            </span>
+
+            <span className='row-start-4 col-start-3 col-span-2'>
+                <a href={songObject.lyrics}>Lyrics</a>
+            </span>
         </div>
     )
 }
