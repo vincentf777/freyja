@@ -1,5 +1,4 @@
 import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
 import Header from '@/components/header'
 import SongList from '@/components/songlist'
 
@@ -13,3 +12,4 @@ export default function Home() {
     </div>
   )
 }
+
